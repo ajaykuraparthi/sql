@@ -18,3 +18,22 @@ FROM cust
 INNER JOIN payments
 ON payments.customerNumber = cust.custno;
 
+
+-- by using Alias  insted of the table name we giving name 
+
+
+SELECT c.custno,
+	  name,
+      p.amount
+FROM cust c
+INNER JOIN payments p
+ON p.customerNumber = c.custno;
+
+
+
+
+
+
+
+
+
